@@ -25,11 +25,31 @@ main()
 
 while True:
     play = input("Would you like to play tic tac toe? 1) Yes, 2) No ")
+    def board:
+        board1 = [
+            ['-', '-', '-']
+            ['-', '-', '-']
+            ['-', '-', '-']
+        ]
     try:
         if play == 1:
-            row1 = int(input("What row would you like to enter (1) top, 2) middle, 3) bottom): "))
-            column1= int(input("What column would you like to use (1) left, 2) middle, 3) right"))
-            board[1][1] = 'X'
+            try row1 = int(input("Player 1 (X) what row would you like to enter (1) top, 2) middle, 3) bottom): ")):
+                try column1= int(input("Player 1 (X) what column would you like to use (1) left, 2) middle, 3) right")):
+                    if row1 == 1:
+                        if column1 == 1: 
+                    elif row1 == 2:
+
+                    elif row 1 == 3:
+                    
+                    else: 
+                except ValueError:
+                print("Invalid Input")
+                print(" ")
+                continue
+            except ValueError:
+                print("Invalid Input")
+                print(" ")
+                continue
         else:
             break
     except ValueError:
