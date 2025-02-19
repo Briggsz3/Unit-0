@@ -25,14 +25,17 @@ main()
 board_list = []
 p1_score = 0
 p2_score = 0
+board1 = [
+    ['-', '-', '-'],
+    ['-', '-', '-'],
+    ['-', '-', '-']
+]
 def board():
-    board1 = [
-        ['-', '-', '-'],
-        ['-', '-', '-'],
-        ['-', '-', '-']
-    ]
+    for i in board1:
+        print(i, end=" ")
+        print()
 while True:
-    play = input("Would you like to play tic tac toe? 1) Yes, 2) No ")
+    play = int(input("Would you like to play tic tac toe? 1) Yes, 2) No "))
     print(" ")
     try:
         if play == 1:
@@ -47,7 +50,7 @@ while True:
                                 continue
                             board1[1][1] == 'X'
                             board_list.append(11)
-                            print(board)
+                            print(board())
                             if board1[1][1] == 'X' and board1[1][2] == 'X' and board1[1][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -64,13 +67,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 2:
+                        if column1 == 2:
                             if 12 in board_list:
                                 print("This square is full")
                                 continue
                             board1[1][2] == 'X'
                             board_list.append(12)
-                            print(board)
+                            print(board())
                             if board1[1][1] == 'X' and board1[1][2] == 'X' and board1[1][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -87,13 +90,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 3:
+                        if column1 == 3:
                             if 13 in board_list:
                                 print("This square is full")
                                 continue
                             board1[1][3] == 'X'
                             board_list.append(13)
-                            print(board)
+                            print(board())
                             if board1[1][1] == 'X' and board1[1][2] == 'X' and board1[1][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -117,7 +120,7 @@ while True:
                                 continue
                             board1[2][1] == 'X'
                             board_list.append(21)
-                            print(board)
+                            print(board())
                             if board1[2][1] == 'X' and board1[2][2] == 'X' and board1[2][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -130,13 +133,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 2:
+                        if column1 == 2:
                             if 22 in board_list:
                                 print("This square is full")
                                 continue
                             board1[2][2] == 'X'
                             board_list.append(22)
-                            print(board)
+                            print(board())
                             if board1[2][2] == 'X' and board1[2][3] == 'X' and board1[2][1] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -157,13 +160,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 3:
+                        if column1 == 3:
                             if 23 in board_list:
                                 print("This square is full")
                                 continue
                             board1[2][3] == 'X'
                             board_list.append(22)
-                            print(board)
+                            print(board())
                             if board1[2][1] == 'X' and board1[2][2] == 'X' and board1[2][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -187,7 +190,7 @@ while True:
                                 continue
                             board1[3][1] == 'X'
                             board_list.append(31)
-                            print(board)
+                            print(board())
                             if board1[3][1] == 'X' and board1[3][2] == 'X' and board1[3][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -204,13 +207,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 2:
+                        if column1 == 2:
                             if 32 in board_list:
                                 print("This square is full")
                                 continue
                             board1[3][2] == 'X'
                             board_list.append(32)
-                            print(board)
+                            print(board())
                             if board1[3][2] == 'X' and board1[1][2] == 'X' and board1[2][2] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -223,13 +226,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 3:
+                        if column1 == 3:
                             if 33 in board_list:
                                 print("This square is full")
                                 continue
                             board1[3][3] == 'X'
                             board_list.append(33)
-                            print(board)
+                            print(board())
                             if board1[3][1] == 'X' and board1[3][2] == 'X' and board1[3][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
@@ -273,7 +276,7 @@ while True:
                                 continue
                             board1[1][1] == 'O'
                             board_list.append(11)
-                            print(board)
+                            print(board())
                             if board1[1][1] == 'O' and board1[1][2] == 'O' and board1[1][3] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -290,13 +293,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 2:
+                        if column2 == 2:
                             if 12 in board_list:
                                 print("This square is full")
                                 continue
                             board1[1][2] == 'O'
                             board_list.append(12)
-                            print(board)
+                            print(board())
                             if board1[1][1] == 'O' and board1[1][2] == 'O' and board1[1][3] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -313,13 +316,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 3:
+                        if column2 == 3:
                             if 13 in board_list:
                                 print("This square is full")
                                 continue
                             board1[1][3] == 'O'
                             board_list.append(13)
-                            print(board)
+                            print(board())
                             if board1[1][1] == 'O' and board1[1][2] == 'O' and board1[1][3] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -337,13 +340,13 @@ while True:
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
                     elif row1 == 2:
-                        if column1 == 1:
+                        if column2 == 1:
                             if 21 in board_list:
                                 print("This square is full")
                                 continue
                             board1[2][1] == 'O'
                             board_list.append(21)
-                            print(board)
+                            print(board())
                             if board1[2][1] == 'O' and board1[2][2] == 'O' and board1[2][3] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -356,13 +359,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 2:
+                        if column2 == 2:
                             if 22 in board_list:
                                 print("This square is full")
                                 continue
                             board1[2][2] == 'O'
                             board_list.append(22)
-                            print(board)
+                            print(board())
                             if board1[2][2] == 'O' and board1[2][3] == 'O' and board1[2][1] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -383,13 +386,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 3:
+                        if column2 == 3:
                             if 23 in board_list:
                                 print("This square is full")
                                 continue
                             board1[2][3] == 'O'
                             board_list.append(22)
-                            print(board)
+                            print(board())
                             if board1[2][1] == 'O' and board1[2][2] == 'O' and board1[2][3] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -407,13 +410,13 @@ while True:
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
                     elif row1 == 3:
-                        if column1 == 1:
+                        if column2 == 1:
                             if 31 in board_list:
                                 print("This square is full")
                                 continue
                             board1[3][1] == 'O'
                             board_list.append(31)
-                            print(board)
+                            print(board())
                             if board1[3][1] == 'O' and board1[3][2] == 'O' and board1[3][3] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -430,13 +433,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 2:
+                        if column2 == 2:
                             if 32 in board_list:
                                 print("This square is full")
                                 continue
                             board1[3][2] == 'O'
                             board_list.append(32)
-                            print(board)
+                            print(board())
                             if board1[3][2] == 'O' and board1[1][2] == 'O' and board1[2][2] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -449,13 +452,13 @@ while True:
                                 print("It's a draw")
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                        if column == 3:
+                        if column2 == 3:
                             if 33 in board_list:
                                 print("This square is full")
                                 continue
                             board1[3][3] == 'O'
                             board_list.append(33)
-                            print(board)
+                            print(board())
                             if board1[3][1] == 'O' and board1[3][2] == 'O' and board1[3][3] == 'O':
                                 print("Player 2 wins")
                                 p2_score = p2_score +1
@@ -494,4 +497,6 @@ while True:
         print("Invalid Input")
         print(" ")
         continue
+
+
 
