@@ -22,7 +22,9 @@ main()
 # Could make a table of all spaces, would make sense but might be a little difficult.
 # assign each space a number and have the number be a variable that gets filled with player one.
 # Look at jeopardy game bc there was a good system of not trapping user in a column if they already answered a question. 
-
+board_list = []
+p1_score = 0
+p2_score = 0
 while True:
     play = input("Would you like to play tic tac toe? 1) Yes, 2) No ")
     def board:
@@ -36,7 +38,24 @@ while True:
             try row1 = int(input("Player 1 (X) what row would you like to enter (1) top, 2) middle, 3) bottom): ")):
                 try column1= int(input("Player 1 (X) what column would you like to use (1) left, 2) middle, 3) right")):
                     if row1 == 1:
-                        if column1 == 1: 
+                        if column1 == 1:
+                            if 11 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[1][1] == 'X'
+                            print(board)
+                            if board1[1][1] == 'X' and board1[1][2] == 'X' and board1[1][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                continue
+                            if board1[1][1] == 'X' and board1[2][2] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                continue
+                            if board1[1][1] == 'X' and board1[2][1] == 'X' and board1[3][1] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                continue
                     elif row1 == 2:
 
                     elif row 1 == 3:
