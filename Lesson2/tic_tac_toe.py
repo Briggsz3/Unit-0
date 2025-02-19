@@ -89,10 +89,189 @@ while True:
                                 p1_score = p1_score +1
                                 print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                        if column == 3:
+                            if 13 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[1][3] == 'X'
+                            board_list.append(13)
+                            print(board)
+                            if board1[1][1] == 'X' and board1[1][2] == 'X' and board1[1][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][3] == 'X' and board1[2][2] == 'X' and board1[3][1] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][3] == 'X' and board1[2][3] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
                     elif row1 == 2:
-                        pass
+                        if column1 == 1:
+                            if 21 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[2][1] == 'X'
+                            board_list.append(21)
+                            print(board)
+                            if board1[2][1] == 'X' and board1[2][2] == 'X' and board1[2][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][1] == 'X' and board1[2][1] == 'X' and board1[3][1] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                        if column == 2:
+                            if 22 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[2][2] == 'X'
+                            board_list.append(22)
+                            print(board)
+                            if board1[2][2] == 'X' and board1[2][3] == 'X' and board1[2][1] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[2][2] == 'X' and board1[1][2] == 'X' and board1[3][2] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][1] == 'X' and board1[2][2] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[3][1] == 'X' and board1[2][2] == 'X' and board1[1][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                        if column == 3:
+                            if 23 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[2][3] == 'X'
+                            board_list.append(22)
+                            print(board)
+                            if board1[2][1] == 'X' and board1[2][2] == 'X' and board1[2][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][3] == 'X' and board1[2][3] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][3] == 'X' and board1[2][3] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
                     elif row1 == 3:
-                        pass
+                        if column1 == 1:
+                            if 31 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[3][1] == 'X'
+                            board_list.append(31)
+                            print(board)
+                            if board1[3][1] == 'X' and board1[3][2] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[3][1] == 'X' and board1[2][2] == 'X' and board1[1][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][1] == 'X' and board1[2][1] == 'X' and board1[3][1] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                        if column == 2:
+                            if 32 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[3][2] == 'X'
+                            board_list.append(32)
+                            print(board)
+                            if board1[3][2] == 'X' and board1[1][2] == 'X' and board1[2][2] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[3][1] == 'X' and board1[3][2] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                        if column == 3:
+                            if 33 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[3][3] == 'X'
+                            board_list.append(33)
+                            print(board)
+                            if board1[3][1] == 'X' and board1[3][2] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][1] == 'X' and board1[2][2] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][3] == 'X' and board1[2][3] == 'X' and board1[3][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
                     else:
                         pass
                 except ValueError:
