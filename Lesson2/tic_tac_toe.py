@@ -25,46 +25,80 @@ main()
 board_list = []
 p1_score = 0
 p2_score = 0
+def board():
+    board1 = [
+        ['-', '-', '-'],
+        ['-', '-', '-'],
+        ['-', '-', '-']
+    ]
 while True:
     play = input("Would you like to play tic tac toe? 1) Yes, 2) No ")
-    def board:
-        board1 = [
-            ['-', '-', '-']
-            ['-', '-', '-']
-            ['-', '-', '-']
-        ]
+    print(" ")
     try:
         if play == 1:
-            try row1 = int(input("Player 1 (X) what row would you like to enter (1) top, 2) middle, 3) bottom): ")):
-                try column1= int(input("Player 1 (X) what column would you like to use (1) left, 2) middle, 3) right")):
+            row1 = int(input("Player 1 (X) what row would you like to enter (1 top, 2 middle, 3 bottom): "))
+            try: 
+                column1= int(input("Player 1 (X) what column would you like to use (1) left, 2) middle, 3) right"))
+                try :
                     if row1 == 1:
                         if column1 == 1:
                             if 11 in board_list:
                                 print("This square is full")
                                 continue
                             board1[1][1] == 'X'
+                            board_list.append(11)
                             print(board)
                             if board1[1][1] == 'X' and board1[1][2] == 'X' and board1[1][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                            if board1[1][1] == 'X' and board1[2][2] == 'X' and board1[3][3] == 'X':
+                            elif board1[1][1] == 'X' and board1[2][2] == 'X' and board1[3][3] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
-                            if board1[1][1] == 'X' and board1[2][1] == 'X' and board1[3][1] == 'X':
+                            elif board1[1][1] == 'X' and board1[2][1] == 'X' and board1[3][1] == 'X':
                                 print("Player One wins")
                                 p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif '-' not in board1:
+                                print("It's a draw")
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                        if column == 2:
+                            if 12 in board_list:
+                                print("This square is full")
+                                continue
+                            board1[1][2] == 'X'
+                            board_list.append(12)
+                            print(board)
+                            if board1[1][1] == 'X' and board1[1][2] == 'X' and board1[1][3] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][2] == 'X' and board1[2][2] == 'X' and board1[3][2] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
+                                continue
+                            elif board1[1][1] == 'X' and board1[2][1] == 'X' and board1[3][1] == 'X':
+                                print("Player One wins")
+                                p1_score = p1_score +1
+                                print(f"Player 1: {p1_score}  Player 2: {p2_score}")
                                 continue
                     elif row1 == 2:
-
-                    elif row 1 == 3:
-                    
-                    else: 
+                        pass
+                    elif row1 == 3:
+                        pass
+                    else:
+                        pass
                 except ValueError:
-                print("Invalid Input")
-                print(" ")
-                continue
+                    print("Invalid Input")
+                    print(" ")
+                    continue
             except ValueError:
                 print("Invalid Input")
                 print(" ")
